@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Helvetica", sans-serif;
+    background: black;
+}
+.container {
+    max-width: 450px;
+    margin: 100px auto;
+}
+.title{
+    color: white;
+    text-align: center;
+    font-size: 55px;
+    margin: 20px 0;
+}
+.container-result{
+    color: #fff;
+    font-size:50px;
+    text-align: right;
+    margin: 0 auto 10px;
+    max-width: 420px;
+}
+.container-buttons{
+    background: black;
+    max-width: 410px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 7px;
+}
+.btn{
+    height: 98px;
+    width: 98px;
+    font-size: 40px;
+    border: none;
+}
+.btn-wide{
+    height: 98px;
+    width: 203px;
+    grid-area: 5 / 1 / 6 / 3;
+    font-size: 42px;
+    text-align: center;
+}
+.btn-black{
+    background: #313131;
+    color: #fff;
+}
+.btn-gray{
+    background: #9f9f9f;
+}
+.btn-orange{
+    background: orange;
+    font-size: 50px;
+    color: white;
+}
+.btn:hover{
+    background: #ece9e9;
+    color: black;
+}
+@media (min-width: 320px ) and (max-width: 425px){
+    .container{
+        background: black;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .container-buttons{
+        max-width: 320px;
+        margin: 50px auto 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(4 , 73px);
+        grid-template-rows: repeat(4, 73px);
+        gap: 5px;
+        background: black;
+    }
+    .btn{
+        height: 73px;
+        width: 73px;
+        font-size: 30px;
+        border: none;
+    }
+    .title{
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        margin: 20px 0;
+    }
+    .container-result{
+        color: #fff;
+        font-size: 40px;
+        text-align: right;
+        margin: 0 auto;
+        max-width: 320px;
+    }
+    .btn-wide{
+        height: 73px;
+        width: 151px;
+        grid-area: 5 / 1 / 6 / 3;
+        font-size: 35px;
+        text-align: center;
+    }
+
+}
